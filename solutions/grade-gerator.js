@@ -4,26 +4,25 @@
 // A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
 
 
-let userInput = window.prompt("Enter marks");
+let userInput = prompt("Enter marks");
 
 //function validating user input
-// function validateUser(){
-//      if(Number.isInteger(userInput)){
-//           if(userInput < 0 || userInput > 100){
-//                console.log("invalid number");
-//           }else{
-//                console.log("Student grade equals")
-//           }
-//      }else{
-//           console.log("Enter a valid number between 0 and 100")
-//      }
-//      return gradeStudent(userInput);
-//  }
-
+function validateUser(){
+     if(Number.isInteger(userInput)){
+          if(userInput < 0 || userInput > 100){
+               console.log("invalid number");
+          }else{
+               console.log("Student grade equals")
+          }
+     }else{
+          console.log("Enter a valid number between 0 and 100")
+     }
+     gradeStudent(userInput);
+ }
+validateUser();
 
 // //function grading students based on input marks
-let marks = 20;
-function gradeStudent(){
+function gradeStudent(marks){
     let grade;
     switch(true){
           case (marks < 40):
@@ -49,4 +48,3 @@ function gradeStudent(){
      console.log(grade);
      return grade;
 }
-gradeStudent();
