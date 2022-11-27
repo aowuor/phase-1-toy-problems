@@ -3,7 +3,7 @@
 // Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary.  
 
 
-let grossSalary = 70000;
+let grossSalary = 700000;
 let paye;
 let nssf;
 let nssfSelection = "oldRate";   // nssf options include; "newRateT1", "newRateT2" & "oldRate"
@@ -114,7 +114,7 @@ function calculateNhif(){
 
 // .............................................NSSF................................................
 // NEW RATES
-// tier1 6% of gross to max of 6000 ..............tier2 6 of gross to max of 18000 and min of 6001
+// tier1 6% of gross to max of 6000 ..............tier2 6% of gross to max of 18000 and min of 6001
 // OLD RATES
 // 5% of gross to max of 400
 
