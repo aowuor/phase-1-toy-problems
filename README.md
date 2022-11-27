@@ -1,10 +1,10 @@
-Toy Problems
+**Toy Problems**
 
-Introduction
+**Introduction**
 
 Big projects consist of a number of small challenges which developers solve to meet a specific goal. These toy problems mimick the small challenges which software developers solve albeit at larger scales in big projects.
 
-Description
+**Description**
 
 There are three major challenges target for this work. Other additional challenges may be added to show how one can go about solving small challenges using JavaScript.
 

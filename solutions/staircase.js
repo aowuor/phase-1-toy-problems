@@ -8,12 +8,11 @@
 //               ##
 //               ###
 
-function staircase(){
-    let i = 0;
-    let char = "#";
+function staircase(char){
+    let i = 1;
     while(i < 5){
-        ++i
         console.log(char.repeat(i));
+        i++
         
     }
     return char;
@@ -21,4 +20,5 @@ function staircase(){
 
 
 }
-console.log(staircase());
+console.log(staircase("#"));
+
