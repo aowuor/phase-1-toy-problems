@@ -1,4 +1,4 @@
-#Toy Problems
+**Toy Problems**
 
 **Introduction**
 
@@ -40,13 +40,12 @@ The major challenges include;
 
 **Setup Instructions**
 
+All the solutions to the various toy problem challenges are written in JavaScript. Therefore installation of Node.js will be required. Also confirm that npm is installed allongside Node.js. In addition, a code editor will be required to test different scenarios of code input. The output can be viewed on browser console or on the IDE output window.
 
-
-
-
+Once the required technologies are installed, clone the toy problem directory to your machine and run the codes. Alternatively, copy the various javascript files to the code editor and run. Output can be quickly accessd on the IDE's terminal.
 
 
 **Author and Licence**
 
-@2022 Angela Owuor
+*@2022 Angela Owuor*
 
