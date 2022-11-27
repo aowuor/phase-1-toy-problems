@@ -1,4 +1,4 @@
-**Toy Problems**
+#Toy Problems
 
 **Introduction**
 
@@ -38,7 +38,7 @@ The major challenges include;
     - www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
 
-Setup Instructions
+**Setup Instructions**
 
 
 
@@ -46,7 +46,7 @@ Setup Instructions
 
 
 
-Author and Licence
+**Author and Licence**
 
 @2022 Angela Owuor
 
