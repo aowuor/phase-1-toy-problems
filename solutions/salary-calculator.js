@@ -3,22 +3,20 @@
 // Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary.  
 
 
-let grossSalary = 700000;
 let paye;
 let nssf;
-let nssfSelection = "oldRate";   // nssf options include; "newRateT1", "newRateT2" & "oldRate"
 let nhif;
 
-function calculateNetSalary(){
-    calculateNssf();
-    calculatePaye();
-    calculateNhif();
+function calculateNetSalary(grossSalary, nssfSelection){
+    calculateNssf(grossSalary, nssfSelection);
+    calculatePaye(grossSalary);
+    calculateNhif(grossSalary);
 
     let netSalary = grossSalary - nssf - nhif - (paye/100 * grossSalary);
     return console.log(`For Gross salary ${grossSalary}, Net salary is ${netSalary}. 
     PAYE equals ${paye/100*grossSalary}, NSSF equals ${nssf} and NHIF equals ${nhif}`);   
 }
-(calculateNetSalary());
+(calculateNetSalary(700000, "oldRate"));
 
 
 // .............................................PAYE..................................................
@@ -28,7 +26,7 @@ function calculateNetSalary(){
 // Above 32,333		                 30%
 
 // let grossSalary = 70000;
-function calculatePaye(){
+function calculatePaye(grossSalary){
     switch(true){
         case (grossSalary <= 24000):
             paye = 10;
@@ -57,7 +55,7 @@ function calculatePaye(){
 // 35,000 - 39,999	950	
 
 
-function calculateNhif(){
+function calculateNhif(grossSalary){
     switch(true){
         case (grossSalary <= 5999):
             nhif = 150;
@@ -119,7 +117,7 @@ function calculateNhif(){
 // 5% of gross to max of 400
 
 
-function calculateNssf(){
+function calculateNssf(grossSalary, nssfSelection){
     if(nssfSelection === "newRateT1"){
         nssf = grossSalary * 6/100;
         if(nssf > 6000){

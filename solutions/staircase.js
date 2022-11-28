@@ -7,18 +7,15 @@
 //     steps(3)  #
 //               ##
 //               ###
-
-function staircase(char){
-    let i = 1;
-    while(i < 5){
+let char = "#";
+function staircase(number){
+    let i = 0;
+    while(i < number){
         console.log(char.repeat(i));
-        i++
-        
+        i++ 
     }
     return char;
 
-
-
 }
-console.log(staircase("#"));
+console.log(staircase(5));
 
